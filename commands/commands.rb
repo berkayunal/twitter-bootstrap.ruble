@@ -2,7 +2,7 @@ require 'ruble'
 
 require 'ruble'
 
-command 'Visit Project Page' do |cmd|
+command 'Visit Project Homepage' do |cmd|
   cmd.input = :none
   cmd.output = :discard
   cmd.invoke do |context|
