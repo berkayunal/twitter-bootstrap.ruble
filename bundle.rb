@@ -128,22 +128,7 @@ END
       authors.menu 'About Berkay UNAL'
       authors.menu 'About Bora UNAL'
 
-      end
-     
-      
-    
-
-   
-    
+      end 
     
   end
 end
-
-
-
-
-
-  
-
-
-
