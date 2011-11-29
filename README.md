@@ -11,6 +11,8 @@ The downloaded the repo as zip
 
 Go to USER_DIRECTORY/Documents/Aptana Rubles and create a folder "twitter-bootstrap.ruble" and extract the contents into that folder
 
+Restart aptana to be sure everything is ok
+
 (Or you can git to the created folder from my repo)
 
 ### 3. Check the Install ###
