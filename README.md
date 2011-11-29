@@ -29,3 +29,4 @@ For anyone who is interested in contributing please contact me from my homepage
 
 And for the ones who want to program their own rubles read below
 https://aptanastudio.tenderapp.com/kb/scripting-aptana-studio/ruble-programming-guide
+
