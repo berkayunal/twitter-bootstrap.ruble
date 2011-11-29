@@ -11,7 +11,7 @@ END
 Twitter Bootstrap Bundle for Aptana Studio 3
 END
 
-  bundle.repository = 'git@github.com:berkayunal/Aptana-Bundle--Twitter-Bootstrap.git'
+  bundle.repository = 'git@github.com:berkayunal/Twitter-Bootstrap-Bundle.git'
 
   bundle.menu 'Twitter Bootstrap' do |menu|
    
