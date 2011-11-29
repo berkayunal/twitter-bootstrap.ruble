@@ -14,8 +14,6 @@ END
   bundle.repository = "git://github.com/berkayunal/Twitter-Bootstrap-Bundle.git"
 
   bundle.menu 'Twitter Bootstrap' do |menu|
-   
-    
 
     menu.menu 'A' do |sub_menu|
         sub_menu.command '<a> Danger'
