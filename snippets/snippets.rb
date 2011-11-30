@@ -16,7 +16,7 @@ snippet "Input" do |snip|
   snip.expansion =
   '
   <div class="clearfix">
-  <label for="jq_${2:id}">${3:label}</label>
+  <label for="jq_${2:id}">${4:label}</label>
   <div class="input">
   <input type="text" name="${1:name}" id="jq_${2:id}" class="${3}">
   </div>
@@ -29,7 +29,7 @@ snippet "Select" do |snip|
   snip.expansion =
   '
   <div class="clearfix">
-  <label for="jq_${2:id}">Select</label>
+  <label for="jq_${2:id}">${4:label}</label>
   <div class="input">
   <selectname="${1:name}" id="jq_${2:id}" class="${3}">
   </select>
