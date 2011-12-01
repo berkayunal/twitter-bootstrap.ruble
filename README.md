@@ -1,6 +1,6 @@
 #Aptana Twitter Bootstrap Bundle#
 
-##Installation##
+##Installation without Git##
 
 ### 1. Get the Bundle ###
 
@@ -13,9 +13,14 @@ Go to USER_DIRECTORY/Documents/Aptana Rubles and create a folder "twitter-bootst
 
 Restart aptana to be sure everything is ok
 
-(Or you can git to the created folder from my repo)
+##Installation with Git##
 
-### 3. Check the Install ###
+    mkdir -p ~/Documents/Aptana\ Rubles
+    cd ~/Documents/Aptana\ Rubles
+    git clone git://github.com/berkayunal/twitter-bootstrap.ruble.git
+    
+
+## Check the Install ##
 
 Check Window -> Show View -> Other or the Commands menu to see if "Twitter Bootstrap Bundle" installed correctly
 
