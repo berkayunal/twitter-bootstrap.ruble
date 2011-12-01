@@ -121,6 +121,7 @@ END
     
     menu.command 'Visit Project Homepage'
     menu.command 'Visit Twitter Bootstrap Homepage'
+    menu.command 'Check for Updates'
     menu.menu "Authors" do |authors|
      
       authors.menu 'About Berkay UNAL'
