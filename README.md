@@ -13,7 +13,7 @@ Go to USER_DIRECTORY/Documents/Aptana Rubles and create a folder "twitter-bootst
 
 Restart aptana to be sure everything is ok
 
-##Installation with Git##
+##Installation with Git (RECOMMENDED)##
 
     mkdir -p ~/Documents/Aptana\ Rubles
     cd ~/Documents/Aptana\ Rubles
