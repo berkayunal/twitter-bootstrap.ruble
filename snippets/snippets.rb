@@ -1,7 +1,6 @@
 require 'ruble'
 
 
-
 snippet "Help" do |snip|
   snip.trigger = "tbfhelp"
 
@@ -16,9 +15,9 @@ snippet "Input" do |snip|
   snip.expansion =
   '
   <div class="clearfix">
-  <label for="jq_${2:id}">${4:label}</label>
+  <label for="${2:id}">${4:label}</label>
   <div class="input">
-  <input type="text" name="${1:name}" id="jq_${2:id}" class="${3}">
+  <input type="text" name="${1:name}" id="${2:id}" class="${3}">
   </div>
   </div>
   '
@@ -29,9 +28,9 @@ snippet "Select" do |snip|
   snip.expansion =
   '
   <div class="clearfix">
-  <label for="jq_${2:id}">${4:label}</label>
+  <label for="${2:id}">${4:label}</label>
   <div class="input">
-  <selectname="${1:name}" id="jq_${2:id}" class="${3}">
+  <selectname="${1:name}" id="${2:id}" class="${3}">
   </select>
   </div>
   </div>
@@ -43,9 +42,9 @@ snippet "Multi Select" do |snip|
   snip.expansion =
   '
   <div class="clearfix">
-  <label for="jq_${2:id}">${5:label}</label>
+  <label for="${2:id}">${5:label}</label>
   <div class="input">
-  <select name="${1:name}" id="jq_${2:id}"multiple="multiple" class="${3}" size="${4:5}" >
+  <select name="${1:name}" id="${2:id}" multiple="multiple" class="${3}" size="${4:5}" >
   </select>
   </div>
   </div>
@@ -70,9 +69,9 @@ snippet "Disabled Textarea" do |snip|
   snip.expansion =
   '
   <div class="clearfix">
-  <label for="jq_${2:id}">${5:label}</label>
+  <label for="${2:id}">${5:label}</label>
   <div class="input">
-  <textarea disabled="" name="${1:name}" id="jq_${2:id}" class="${3:xxlarge}" rows="${6:3}"></textarea>
+  <textarea disabled="" name="${1:name}" id="${2:id}" class="${3:xxlarge}" rows="${6:3}"></textarea>
   </div>
   </div>
   '
@@ -83,9 +82,9 @@ snippet "Disabled Input" do |snip|
   snip.expansion =
   '
   <div class="clearfix">
-  <label for="jq_${2:id}">${5:label}</label>
+  <label for="${2:id}">${5:label}</label>
   <div class="input">
-  <input type="text" disabled=""name="${1:name}" id="jq_${2:id}" class="${3:xxlarge} disabled" placeholder="${6:Disabled input here…}">
+  <input type="text" disabled=""name="${1:name}" id="${2:id}" class="${3:xxlarge} disabled" placeholder="${6:Disabled input here…}">
   </div>
   </div>
   '
@@ -96,11 +95,11 @@ snippet "Prepended Text" do |snip|
   snip.expansion =
   '
   <div class="clearfix">
-  <label for="jq_${2:id}">${5:label}</label>
+  <label for="${2:id}">${5:label}</label>
   <div class="input">
   <div class="input-prepend">
-  <span class="add-on">jq_${4:@}</span>
-  <input type="text" name="${1:name}" id="jq_${2:id}" class="${3:medium}">
+  <span class="add-on">${4:@}</span>
+  <input type="text" name="${1:name}" id="${2:id}" class="${3:medium}">
   </div>
   </div>
   </div>
@@ -112,11 +111,11 @@ snippet "Prepended Checkbox" do |snip|
   snip.expansion =
   '
   <div class="clearfix">
-  <label for="jq_${2:id}">${5:label}</label>
+  <label for="${2:id}">${5:label}</label>
   <div class="input">
   <div class="input-prepend">
   <label class="add-on"><input type="checkbox" value="" id="" name=""></label>
-  <input type="text" name="${1:name}" id="jq_${2:id}" class="${3:mini}">
+  <input type="text" name="${1:name}" id="${2:id}" class="${3:mini}">
   </div>
   </div>
   </div>
@@ -128,10 +127,10 @@ snippet "Appended Checkbox" do |snip|
   snip.expansion =
   '
   <div class="clearfix">
-  <label for="jq_${2:id}">${5:label}</label>
+  <label for="${2:id}">${5:label}</label>
   <div class="input">
   <div class="input-append">
-  <input type="text" name="${1:name}" id="jq_${2:id}" class="${3:mini}">
+  <input type="text" name="${1:name}" id="${2:id}" class="${3:mini}">
   <label class="add-on active"><input type="checkbox" value="" id="" name=""></label>
   </div>
   </div>
@@ -144,9 +143,9 @@ snippet "File Input" do |snip|
   snip.expansion =
   '
   <div class="clearfix">
-  <label for="jq_${2:id}">${5:label}</label>
+  <label for="${2:id}">${5:label}</label>
   <div class="input">
-  <input type="file" name="${1:name}" id="jq_${2:id}" class="${3:input-file}">
+  <input type="file" name="${1:name}" id="${2:id}" class="${3:input-file}">
   </div>
   </div>
   '
@@ -157,12 +156,12 @@ snippet "List Of Options Checkbox" do |snip|
   snip.expansion =
   '
   <div class="clearfix">
-  <label for="jq_${2:id}">${5:label}</label>
+  <label for="${2:id}">${5:label}</label>
   <div class="input">
   <ul class="inputs-list">
   <li>
   <label>
-  <input type="checkbox" name="${1:name}" id="jq_${2:id}" value="${3:option1}">
+  <input type="checkbox" name="${1:name}" id="${2:id}" value="${3:option1}">
   <span>${4:text}</span>
   </ul>
   </div>
@@ -175,12 +174,12 @@ snippet "List Of Options Radio" do |snip|
   snip.expansion =
   '
   <div class="clearfix">
-  <label for="jq_${2:id}">${5:label}</label>
+  <label for="${2:id}">${5:label}</label>
   <div class="input">
   <ul class="inputs-list">
   <li>
   <label>
-  <input type="radio" name="${1:name}" id="jq_${2:id}" value="${3:option1}">
+  <input type="radio" name="${1:name}" id="${2:id}" value="${3:option1}">
   <span>${4:text}</span>
   </ul>
   </div>
@@ -208,9 +207,9 @@ snippet "Textarea" do |snip|
   snip.expansion =
   '
   <div class="clearfix">
-  <label for="jq_${2:id}">${5:label}</label>
+  <label for="${2:id}">${5:label}</label>
   <div class="input">
-  <textarea rows="3" name="${1:name}" id="jq_${2:id}" class="${3:xxlarge}"></textarea>
+  <textarea rows="3" name="${1:name}" id="${2:id}" class="${3:xxlarge}"></textarea>
   </div>
   </div>
   '
@@ -220,7 +219,7 @@ snippet "Form Default" do |snip|
   snip.trigger = "tbfftd"
   snip.expansion =
   '
-  <form class="${4}" name="${1:name}" id="jq_${2:id}" action="${3}">
+  <form name="${1:name}" method="${2:post}" action="${3}" class="${4}" >
   <fieldset>
   <legend>${5:Example form legend}</legend>
   ${10:<!-- Insert Form Here -->}
@@ -236,7 +235,7 @@ snippet "Form Stacked" do |snip|
   snip.trigger = "tbffts"
   snip.expansion =
   '
-  <form class="${4:form-stacked}" name="${1:name}" id="jq_${2:id}" action="${3}">
+  <form name="${1:name}" method="${2:post}" action="${3}" class="${4:form-stacked}">
   <fieldset>
   <legend>${5:Example form legend}</legend>
   ${10:<!-- Insert Form Here -->}
