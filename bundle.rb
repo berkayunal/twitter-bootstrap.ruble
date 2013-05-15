@@ -116,7 +116,12 @@ END
         sub_menu.command 'Zebra Table'
  
     end
-    
+
+    menu.menu 'Templates' do |sub_menu|
+        sub_menu.command 'Basic page structure'
+        sub_menu.command 'Starter template'
+    end 
+  
     menu.separator
     
     menu.command 'Visit Project Homepage'
